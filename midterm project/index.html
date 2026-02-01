@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PLP Web Portal - Home</title>
+    
+    <!-- jQuery and jQuery UI -->
+    <link rel="stylesheet" href="jquery-ui.css">
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo-section">
+                <img src="images/plp logo.png" alt="Pamantasan ng Lungsod ng Pasig" class="logo">
+                <div class="school-name">
+                    <h1>PLP Web Portal</h1>
+                    <p>Pamantasan ng Lungsod ng Pasig</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#" class="nav-link active" data-page="home">Home</a></li>
+            <li><a href="#" class="nav-link" data-page="about">About</a></li>
+            <li><a href="#" class="nav-link" data-page="admission">Admission</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- HOME PAGE -->
+        <div id="home-page" class="page-section">
+            <!-- Welcome Section -->
+            <div class="welcome-section">
+                <h2>Welcome to PLP Web Portal</h2>
+                <p>An empowered Pasig Community through excellent education focused on future-proofed student success and improved quality of life anchored on the common good in a multicultural world.</p>
+            </div>
+
+            <!-- Latest Announcements Slider -->
+            <div class="slider-container">
+                <h2 style="margin-bottom: 1rem; color: #007542;">Student Testimonials</h2>
+                <div class="testimonial-slider">
+                    <div class="testimonial-item active">
+                        <p>"Ang ganda ng PLP talaga! May Financial Assistance pa!"</p>
+                        <div class="testimonial-author">- John Michael Peligro, BS Information Technology</div>
+                    </div>
+                    <div class="testimonial-item">
+                        <p>"Ang ganda ng PLP! Ang mga guro ay napaka-suportado at ang mga pasilidad ay maayos."</p>
+                        <div class="testimonial-author">- Johnmel Rojas, BS Information Technology</div>
+                    </div>
+                    <div class="testimonial-item">
+                        <p>"Ang ating mga guro ay matatalino, at masisipag magturo. Dala nila ang pulo ng tagumpay ng mga estudyante! Ngunit pili lamang ang mga gurong aking tinutukoy. At aking sasabihin ito sa harap mo Ma'am Cathe."</p>
+                        <div class="testimonial-author">- Mell Ebuen, BS Information Technology</div>
+                    </div>
+                    <div class="slider-controls">
+                        <span class="slider-dot active" data-slide="0"></span>
+                        <span class="slider-dot" data-slide="1"></span>
+                        <span class="slider-dot" data-slide="2"></span>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="content-grid">
+                <div class="content-card">
+                    <img src="images/nursing.png" alt="College of Nursing" class="college-logo">
+                    <h3>College of Nursing</h3>
+                    <p>Dedicated to producing competent and compassionate healthcare professionals equipped with the knowledge and skills to serve the community.</p>
+                </div>
+                <div class="content-card">
+                    <img src="images/arts and sciences.png" alt="College of Arts and Science" class="college-logo">
+                    <h3>College of Arts and Science</h3>
+                    <p>Fostering critical thinking and creativity through diverse programs in liberal arts, social sciences, and natural sciences.</p>
+                </div>
+                <div class="content-card">
+                    <img src="images/hm.png" alt="College of Hospitality Management" class="college-logo">
+                    <h3>College of Hospitality Management</h3>
+                    <p>Preparing students for leadership roles in the dynamic hospitality and tourism industry with hands-on training and industry partnerships.</p>
+                </div>
+                <div class="content-card">
+                    <img src="images/ccs.png" alt="College of Computer Studies" class="college-logo">
+                    <h3>College of Computer Studies</h3>
+                    <p>Empowering future tech leaders with cutting-edge knowledge in software development, cybersecurity, and emerging technologies.</p>
+                </div>
+                <div class="content-card">
+                    <img src="images/eng.png" alt="College of Engineering" class="college-logo">
+                    <h3>College of Engineering</h3>
+                    <p>Building innovative engineers through rigorous training in civil, mechanical, electrical, and electronics engineering programs.</p>
+                </div>
+                <div class="content-card">
+                    <img src="images/coed.png" alt="College of Education" class="college-logo">
+                    <h3>College of Education</h3>
+                    <p>Shaping future educators who will inspire and transform lives through quality teaching and innovative pedagogical approaches.</p>
+                </div>
+                <div class="content-card">
+                    <img src="images/accountancy.png" alt="College of Business and Accountancy" class="college-logo">
+                    <h3>College of Business and Accountancy</h3>
+                    <p>Developing business leaders and accounting professionals with strong ethical foundations and strategic business acumen.</p>
+                </div>
+            </div>
+             <!-- Submit Testimonial Section -->
+                <div style="margin-top: 3rem; background-color: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); text-align: center;">
+                    <h3>Share Your Experience</h3>
+                    <p>Already a student? Share your testimonial with prospective students!</p>
+                    <br>
+                    <button class="submit-btn" id="testimonial-btn">Submit Testimonial</button>
+                </div>
+        </div>
+
+        <!-- ABOUT PAGE -->
+        <div id="about-page" class="page-section" style="display: none;">
+            <div class="page-content">
+                <h2>About PLP</h2>
+                <img src="images/plp background.png" alt="Pamantasan ng Lungsod ng Pasig" style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px; margin: 1rem 0;">
+                
+                <h3 style="margin-top: 2rem; margin-bottom: 1rem; color: #007542;">PLP Mission</h3>
+                <p>To provide an inclusive and transformative education that empowers students to succeed in an ever-changing world. Through community engagement, we foster a culturally diverse and globally aware learning environment equipping students with the knowledge, skills, and values necessary for total human development.</p>
+
+                <h3 style="margin-top: 2rem; margin-bottom: 1rem; color: #007542;">PLP Vision</h3>
+                <p>To provide accessible, quality education that empowers students to become leaders and innovators in their communities and professions.</p>
+
+                <h3 style="margin-top: 2rem; margin-bottom: 1rem; color: #007542;">PLP Core Values</h3>
+                <p>Academic Excellence, Cultural Identity, Peace Education, Sustainable Development, Social Equity and Responsibility, and Global Competitiveness.</p>
+
+                <h3 style="margin-top: 2rem; color: #007542;">PLP Hymn</h3>
+                <p style="white-space: pre-line; font-style: italic; line-height: 1.8;">
+                    Sariwain ang nagdaan 
+                    Nang kami 'yong alagaan 
+                    Puso't isip iyong binuksan
+                    Talino ay pinagyaman
+
+                    Batang isip pinalitan
+                    Pinuspos ng karunungan
+                    Tulad ng bakal 'yong pinanday
+                    Tumibay ang katauhan
+
+                    Pamantasan ng Lungsod ng Pasig
+                    Tanglaw ka sa aming bayan
+                    Iyong pamana'y laging buhay
+                    Sa 'ming dibdib nakaukit
+
+                    Pamantasan ng Lungsod ng Pasig
+                    Sinag ka na pag-asa
+                    Bagong umaga'y 'di na pangarap
+                    Tagumpay nati'y nakamtan na
+
+                    Pamantasan ng Lungsod ng Pasig
+                    Buhay pag-asa ng bayan ko
+                </p>
+            </div>
+        </div>
+
+        <!-- ADMISSION PAGE -->
+        <div id="admission-page" class="page-section" style="display: none;">
+            <div class="page-content">
+                <h2>Admissions & Contact</h2>
+                <p>Welcome to PLP! We are excited to guide you through the admissions process. Fill out the forms below to get started.</p>
+
+                <!-- Admission Form -->
+                <div style="margin-top: 2rem;">
+                    <h3>Enrollment Application Form</h3>
+                    <form id="admission-form">
+                        <div class="form-group">
+                            <label for="student-name">Full Name *</label>
+                            <input type="text" id="student-name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" required minlength="11" maxlength="11" placeholder="e.g., 09171234567">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="city">City</label>
+                            <input type="text" id="city" placeholder="Pasig residents are priority...">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="program">Desired Program *</label>
+                            <select id="program" required>
+                                <option value="">Select a program</option>
+                                <option value="cs">Computer Science</option>
+                                <option value="it">Information Technology</option>
+                                <option value="ece">Electronics and Communications Engineering</option>
+                                <option value="bsba">Business Administration</option>
+                                <option value="bsa">Accountancy</option>
+                                <option value="bsen">Entrepreneurship</option>
+                                <option value="psych">Psychology</option>
+                                <option value="nursing">Nursing</option>
+                                <option value="educ1">Secondary Education</option>
+                                <option value="educ2">Elementary Education</option>
+                                <option value="hm">Hospitality Management</option>
+
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="enrollment-date">Preferred Enrollment Date *</label>
+                            <input type="text" id="enrollment-date" readonly required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Application Progress</label>
+                            <div id="enrollment-progress"></div>
+                            <p style="margin-top: 0.5rem; color: #666;">Complete all fields to progress</p>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Submit Application</button>
+                    </form>
+                </div>
+
+                <!-- FAQs Accordion -->
+                <div style="margin-top: 3rem;">
+                    <h3>Frequently Asked Questions</h3>
+                    <div id="faq-accordion">
+                        <h3>What are the admission requirements?</h3>
+                        <div>
+                            <p>Admission requirements include:</p>
+                            <ul>
+                                <li>PSA Birth Certification</li>
+                                <li>Certified True Copy of Grade 11 Report Card, or Form 138 (for SHS Graduates)</li>
+                                <li>Certified True Copy of Form 137</li>
+                                <li>2 pieces passport-size picture with white background</li>
+                                <li>Proof of residency and/or identity, such as Valid ID of student and parent/guardian</li>
+                                <li>General Average/Grade Report​</li>
+                            </ul>
+                        </div>
+
+                        <h3>When is the application deadline?</h3>
+                        <div>
+                            <p>The application period for new applicants starts January 6, 2025, and ends March 14, 2025. During this window, documents should be submitted through the official means advised, such as the Registrar's Office or designated application portals.</p>
+                            <br>
+                            <p><b>Early applications are encouraged as spaces are limited.</b></p>
+                        </div>
+
+                        <h3>What is the tuition fee?</h3>
+                        <div>
+                            <p><b>No Tuition Fee!</b></p>
+                            <p>Students do not pay tuition because PLP participates in CHED's UniFAST program and other local government subsidies, which cover both tuition and often miscellaneous fees for qualified applicants.</p>
+                            <br>
+                            <p>PLP is under the jurisdiction of the Commission on Higher Education (CHED) in the Philippines.</p>
+                        </div>
+
+                        <h3>Do you offer scholarships?</h3>
+                        <div>
+                            <p>As soon as the student is enrolled in the Pamantasan, he/she is automatically considered for the CHED Unifast scholarship.</p>
+                            <br>
+                            <p><b>The UniFAST scholarship, mandated by Republic Act No. 10931 (“Universal Access to Quality Tertiary Education Act”), provides free tuition and other school fees for eligible college students in public universities like PLP</b></p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div style="margin-top: 3rem; background: #f9f9f9; padding: 2rem; border-radius: 8px;">
+                    <h3>Contact Us</h3>
+                    <p><strong>Address:</strong> Alkalde Jose St., Kapasigan, Pasig City, Metro Manila, Philippines</p>
+                    <p><strong>Email:</strong> inquiry@plpasig.edu.ph | registrar@plpasig.edu.ph</p>
+                    <p><strong>Office Hours:</strong> Monday - Friday, 8:00 AM - 5:00 PM</p>
+                    <img src="images/plp maps.png" alt="PLP Campus Map" style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px; margin-top: 1rem;">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2025 PLP Web Portal. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Testimonial Dialog -->
+    <div id="testimonial-dialog" title="Submit Your Testimonial" style="display: none;">
+        <form id="testimonial-form">
+            <div class="form-group">
+                <label for="testimonial-name">Your Name:</label>
+                <input type="text" id="testimonial-name" required>
+            </div>
+            <div class="form-group">
+                <label for="testimonial-program">Your Program:</label>
+                <input type="text" id="testimonial-program" placeholder="e.g., BS Computer Science" required>
+            </div>
+            <div class="form-group">
+                <label for="testimonial-text">Your Testimonial:</label>
+                <textarea id="testimonial-text" required></textarea>
+            </div>
+        </form>
+    </div>
+
+    <!-- Welcome Dialog -->
+    <div id="welcome-dialog" title="Welcome to PLP!" style="display: none;">
+        <p>Welcome to the PLP Web Portal! We're excited to have you here.</p>
+        <p>Explore our programs, learn about our colleges, mission, vision, and core values, and discover how PLP can help you achieve your educational goals.</p>
+        <br>
+        <p><strong>Get Started:</strong> Browse our colleges, check admission requirements, or contact us for more information!</p>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            // Welcome Dialog - Show on page load
+            $("#welcome-dialog").dialog({
+                autoOpen: true,
+                modal: true,
+                width: 500,
+                buttons: {
+                    "Get Started": function() {
+                        $(this).dialog("close");
+                    }
+                }
+            });
+
+            // Testimonial Dialog
+            $("#testimonial-dialog").dialog({
+                autoOpen: false,
+                modal: true,
+                width: 500,
+                buttons: {
+                    "Submit": function() {
+                        var name = $("#testimonial-name").val();
+                        var program = $("#testimonial-program").val();
+                        var text = $("#testimonial-text").val();
+                        
+                        if (name && program && text) {
+                            alert("Thank you for your testimonial! This soon will be evaluated first, before published!");
+                            $("#testimonial-form")[0].reset();
+                            $(this).dialog("close");
+                        } else {
+                            alert("Please fill in all fields.");
+                        }
+                    },
+                    "Cancel": function() {
+                        $(this).dialog("close");
+                    }
+                }
+            });
+
+            $("#testimonial-btn").click(function() {
+                $("#testimonial-dialog").dialog("open");
+            });
+
+            // Navigation
+            $(".nav-link").click(function(e) {
+                e.preventDefault();
+                var page = $(this).data("page");
+                
+                // Update active nav
+                $(".nav-link").removeClass("active");
+                $(this).addClass("active");
+                
+                // Show/hide pages
+                $(".page-section").hide();
+                $("#" + page + "-page").show();
+                
+                // Scroll to top
+                window.scrollTo(0, 0);
+            });
+
+
+            $("#faq-accordion").accordion({
+                collapsible: true,
+                heightStyle: "content"
+            });
+
+            // Datepicker Widget
+            $("#enrollment-date").datepicker({
+                minDate: 0,
+                dateFormat: "MM dd, yy",
+                beforeShowDay: function(date) {
+                    // Only allow weekdays
+                    var day = date.getDay();
+                    return [(day != 0 && day != 6)];
+                }
+            });
+
+    
+
+
+            // Autocomplete Widget - City Search
+            var cities = [
+                "Manila", "Quezon City", "Makati", "Pasig City", "Taguig City", "Mandaluyong",
+                "Marikina", "Pasay City"];
+
+            $("#city").autocomplete({
+                source: cities,
+                minLength: 1
+            });
+
+            // Progressbar Widget - Updates based on form completion
+            $("#enrollment-progress").progressbar({
+                value: 0
+            });
+
+            // Update progress bar as form fields are filled
+            $("#admission-form input, #admission-form select, #admission-form textarea").on("input change", function() {
+                var totalFields = $("#admission-form input[required], #admission-form select[required]").length;
+                var filledFields = 0;
+                
+                $("#admission-form input[required], #admission-form select[required]").each(function() {
+                    if ($(this).val() !== "") {
+                        filledFields++;
+                    }
+                });
+                
+                var progress = Math.round((filledFields / totalFields) * 100);
+                $("#enrollment-progress").progressbar("value", progress);
+            });
+
+            // Form Submission
+            $("#admission-form").submit(function(e) {
+                e.preventDefault();
+                
+                var progress = $("#enrollment-progress").progressbar("value");
+                
+                if (progress === 100) {
+                    alert("Application submitted successfully! We will contact you within 3-5 business days.");
+                    $(this)[0].reset();
+                    $("#enrollment-progress").progressbar("value", 0);
+                } else {
+                    alert("Please complete all required fields before submitting.");
+                }
+            });
+
+            // Testimonial Slider
+            var currentSlide = 0;
+            var totalSlides = $(".testimonial-item").length;
+
+            function showSlide(index) {
+                $(".testimonial-item").removeClass("active");
+                $(".slider-dot").removeClass("active");
+                
+                $(".testimonial-item").eq(index).addClass("active");
+                $(".slider-dot").eq(index).addClass("active");
+            }
+
+            function nextSlide() {
+                currentSlide = (currentSlide + 1) % totalSlides;
+                showSlide(currentSlide);
+            }
+
+            // Auto-advance slider every 5 seconds
+            setInterval(nextSlide, 5000);
+
+            // Manual slider control
+            $(".slider-dot").click(function() {
+                currentSlide = $(this).data("slide");
+                showSlide(currentSlide);
+            });
+        });
+    </script>
+</body>
+</html>
